@@ -90,9 +90,13 @@
       </div>
     </div>
     <script>
-      let price = document.querySelector(".hot").innerHTML;
-      console.log(price);
-      document.querySelector(".hot").innerHTML = price + "&#128293";
+      var prices = document.querySelectorAll(".hot");
+      console.log(prices);
+      prices.forEach((price) => {
+        let val = price.innerHTML;
+        console.log(val);
+        price.innerHTML = val + "&#128293";
+      });
     </script>
   </body>
 </html>
